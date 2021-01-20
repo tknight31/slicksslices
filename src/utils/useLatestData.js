@@ -9,6 +9,8 @@ export default function useLatestData() {
 
   // for syntax highlighting
   const gql = String.raw;
+
+  // create shared query string for slicemasters and hot slices
   const deets = `
     name
     _id
@@ -47,7 +49,7 @@ export default function useLatestData() {
     })
       .then((res) => res.json())
       .then((json) => {
-        // Check for erros
+        // Check for errors
         // set the data to state
         setHotSlices(json.data.StoreSettings.hotSlices);
         setSlicemasters(json.data.StoreSettings.slicemaster);
