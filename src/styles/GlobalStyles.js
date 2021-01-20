@@ -76,7 +76,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .tilt {
-    transform: rotate(-2deg);
+    transform: rotate(-3deg);
     position: relative;
     display: inline-block;
   }
