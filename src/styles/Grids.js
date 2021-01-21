@@ -20,7 +20,7 @@ export const ItemStyles = styled.div`
   img {
     height: auto;
     font-size: 0;
-    border: 1px solid red;
+    border: 1px solid lightblue;
   }
   p {
     transform: rotate(-2deg) translateY(-140%);
