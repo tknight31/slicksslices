@@ -11,7 +11,6 @@ const SlicemasterPageGrid = styled.div`
 `;
 
 export default function Slicemaster({ data: { slicemaster } }) {
-  console.log(slicemaster, 'can you hear me now');
   return (
     <div>
       <SEO title={slicemaster.name} image={slicemaster.image.asset.src} />

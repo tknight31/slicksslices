@@ -37,7 +37,6 @@ export default function usePizza({ pizzas, values }) {
       email: values.email,
       mapleSyrup: values.mapleSyrup,
     };
-    console.log(body, 'boddyoddyoddy');
 
     const res = await fetch(
       `${process.env.GATSBY_SERVERLESS_BASE}/placeOrder`,
@@ -51,7 +50,6 @@ export default function usePizza({ pizzas, values }) {
     );
 
     const text = JSON.parse(await res.text());
-    console.log(res.status, "is the status")
 
     // check if everything worked
     if (res.status >= 400 && res.status < 600) {
