@@ -7,7 +7,6 @@ import formatMoney from '../utils/formatMoney';
 export default function PizzaOrder({ order, pizzas, removeFromOrder }) {
   return (
     <div>
-      <p>ORDERRRRRR</p>
       <p>you have {order.length} in your order</p>
       {order.map((singleOrder, index) => {
         const pizza = pizzas.find((pizza) => pizza.id === singleOrder.id);
